@@ -2,6 +2,7 @@ import React from 'react'
 import { images } from '../../Assets/Images'
 import { motion } from 'framer-motion'
 import { MdOutlineArrowOutward, MdArrowForward } from "react-icons/md";
+import { IoShirtOutline } from "react-icons/io5";
 export default function Home() {
     return (
         <div className='bg-gradient-to-b from-black flex flex-col items-center to-Onyx h-[88vh]'>
@@ -34,9 +35,9 @@ export default function Home() {
                         </motion.button>
                         <hr className='w-[20%] self-end'/>
                         <div className='flex justify-between  items-center'>
-                            <div className='flex space-x-1'>
+                            <div className='flex space-x-2'>
                                 <div className='h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center'><img src={images.test} className='rounded-full h-full w-full object-cover' /></div>
-                                <div className='h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center'><img src={images.test} className='rounded-full h-full w-full object-cover' /></div>
+                                <div className='h-[80px] w-[80px] border-white border-[1px] rounded-full flex justify-center items-center'><IoShirtOutline color='#fff' size={35} /></div>
                                 <div className='h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center'><img src={images.test} className='rounded-full h-full w-full object-cover' /></div>
                             </div>
                             <div className='h-[30px] w-[30px] border-white border-[1px] rounded-full flex justify-center items-center'><MdArrowForward color='#fff' /></div>
