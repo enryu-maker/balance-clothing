@@ -10,7 +10,7 @@ export default function Home() {
                 <div className='  h-[70%] w-[35%] mt-6 rounded-2xl rotate-2'>
                     <motion.button
                         className=' font-Montserrat flex text-2xl self-right hover:text-red-600 font-semibold text-white rounded-full p-1 '>
-                        Spotlight of Week 
+                        Spotlight of Week
                         <div className='h-[30px] w-[30px] ml-5 border-white border-[1px] rounded-full flex justify-center items-center'><MdArrowForward color='#fff' size={15} /></div>
                     </motion.button>
                     <img src={images.test} alt='tetx' className='rounded-2xl' />
@@ -26,14 +26,14 @@ export default function Home() {
                         <motion.button
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.8 }}
-                            className=' font-Montserrat flex items-center space-x-2 tracking-widest w-[82px] border-white border-[1px] text-xs font-semibold text-white rounded-full mx-2 p-1 px-2 mt-1'>
+                            className=' font-Montserrat flex items-center space-x-2 tracking-widest w-[90px] border-white border-[1px] text-xs font-semibold text-white rounded-full mx-2 p-1 px-2 mt-1'>
                             /featured
                         </motion.button>
                         <motion.button
                             className=' font-Montserrat text-left   text-2xl text-white rounded-full p-1 px-2 mt-1'>
                             elevate your experience with our handpicked featured selection...
                         </motion.button>
-                        <hr className='w-[20%] self-end'/>
+                        <hr className='w-[20%] self-end' />
                         <div className='flex justify-between  items-center'>
                             <div className='flex space-x-2'>
                                 <div className='h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center'><img src={images.test} alt='tetx' className='rounded-full h-full w-full object-cover' /></div>
@@ -55,7 +55,6 @@ export default function Home() {
                             balānce introducing our latest <span className='text-white'> clothing <br /> collection <div className='h-[40px] w-[40px] bg-white rounded-full flex justify-center items-center'><MdOutlineArrowOutward color='#000' size={28} /></div></span>
                         </motion.button>
                     </div>
-
                 </div>
             </div>
         </div>

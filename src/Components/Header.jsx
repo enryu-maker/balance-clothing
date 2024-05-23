@@ -2,11 +2,13 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { FaRegCircleUser } from "react-icons/fa6";
 import { BsBagHeart } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 export default function Header() {
     const [show, setShow] = React.useState({
         show: false,
         show1: false,
     })
+    const navigate = useNavigate()
     return (
         <div className=' flex justify-between items-start px-5 py-3 z-50 h-[100px] bg-black sticky top-0' >
             <div className=''>
@@ -28,13 +30,25 @@ export default function Header() {
             </div>
             <div className='flex w-[35%] justify-between'>
                 <div>
-                    <motion.button  className='font-Montserrat text-lg hover:text-red-600  text-white px-2'>
+                    <motion.button 
+                    onClick={()=>{
+                        navigate('store')
+                    }}
+                    className='font-Montserrat text-lg hover:text-red-600  text-white px-2'>
                         Store
                     </motion.button>
-                    <motion.button  className='font-Montserrat text-lg hover:text-red-600  text-white px-2'>
+                    <motion.button 
+                    onClick={()=>{
+                        navigate('about')
+                    }}
+                    className='font-Montserrat text-lg hover:text-red-600  text-white px-2'>
                         About
                     </motion.button>
-                    <motion.button  className='font-Montserrat text-lg hover:text-red-600  text-white px-2'>
+                    <motion.button  
+                    onClick={()=>{
+                        navigate('blogs')
+                    }}
+                    className='font-Montserrat text-lg hover:text-red-600  text-white px-2'>
                         Blogs
                     </motion.button>
                 </div>
@@ -60,8 +74,11 @@ export default function Header() {
                             <BsBagHeart />
                         </motion.button>
                     </button>
-                    <button className='font-Montserrat py-2 flex px-1 items-center h-[35px] justify-between text-base space-x-3  rounded-full bg-white text-black'>
-
+                    <button 
+                    onClick={()=>{
+                        navigate('auth')
+                    }}
+                    className='font-Montserrat py-2 flex px-1 items-center h-[35px] justify-between text-base space-x-3  rounded-full bg-white text-black'>
                         <p className='ml-3 font-semibold'>
                             Login
                         </p>
